@@ -54,7 +54,7 @@ sub err {
 
 	# Check to Tags object.
 	if (! $TAGS) {
-		Error::Pure::Die::err('Bad Tags object');
+		Error::Pure::Die::err('Bad \'Tags\' object');
 	}
 
 	# Errors.
