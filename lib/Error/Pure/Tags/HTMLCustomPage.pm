@@ -31,18 +31,18 @@ our $TAGS = $EMPTY;
 
 # Tags structure.
 our $TAGS_STRUCTURE_AR = [
-	'html',
-	'head',
-	'title',
-	\'Error',
-	'end_title',
-	'end_head',
-	'body',
-	'div',
-	\'Error on page',
-	'end_div',
-	'end_body',
-	'end_html',
+	['b', 'html'],
+	['b', 'head'],
+	['b', 'title'],
+	['d', 'Error'],
+	['e', 'title'],
+	['e', 'head'],
+	['b', 'body'],
+	['b', 'div'],
+	['d', 'Error on page'],
+	['e', 'div'],
+	['e', 'body'],
+	['e', 'html'],
 ];
 
 # XML version.

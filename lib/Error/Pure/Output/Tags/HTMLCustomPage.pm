@@ -60,7 +60,7 @@ sub err_pretty {
 
 	# Main page.
 	my @tmp = @{$tags_structure_ar};
-	$tags_obj->put(\@tmp);
+	$tags_obj->put(@tmp);
 
 	# Ok.
 	return 1;
