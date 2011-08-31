@@ -68,6 +68,7 @@ sub err {
 
 		err_pretty($TAGS, $ENCODING, $CONTENT_TYPE, $XML_VERSION,
 			$TAGS_STRUCTURE_AR);
+		print $TAGS->flush;
 
 	# Die for eval.
 	} else {
