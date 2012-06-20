@@ -17,11 +17,12 @@ requires 'HTTP::Headers::Fast' => 0;
 requires 'Indent::PerlStruct' => 0.01;
 requires 'List::MoreUtils' => 0;
 requires 'Readonly' => 0;
-resources 'repository' => {
-	'url' => 'git://github.com/tupinek/Error-Pure-Tags-HTMLCustomPage',
-	'web' => 'https://github.com/tupinek/Error-Pure-Tags-HTMLCustomPage',
-	'type' => 'git',
-};
+resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
+	'?Name=Error-Pure-Tags-HTMLCustomPage';
+resources 'homepage' => 'https://github.com/tupinek/'.
+	'Error-Pure-Tags-HTMLCustomPage';
+resources 'repository' => 'git://github.com/tupinek/'.
+	'Error-Pure-Tags-HTMLCustomPage';
 test_requires 'Cwd' => 0;
 test_requires 'English' => 0;
 test_requires 'File::Spec::Functions' => 0;
