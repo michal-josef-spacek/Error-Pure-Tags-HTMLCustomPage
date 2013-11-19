@@ -39,7 +39,7 @@ sub err_pretty {
 	# XML tag.
 	$tags_obj->put(
 		['i', 'xml', 'version="'.$xml_version.'" encoding="'.$encoding.
-			'" standalone="no"?>'],
+			'" standalone="no"'],
 	);
 	if ($debug) {
 		$tags_obj->put(['r', "\n"]);
