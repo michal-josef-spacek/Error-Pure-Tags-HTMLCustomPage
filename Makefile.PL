@@ -4,16 +4,16 @@ use warnings;
 
 # Modules.
 use inc::Module::Install;
-use File::Spec::Functions qw(catfile);
 
 # Definition.
 abstract 'Perl module for structured errors. HTMLCustomPage version.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Error-Pure-Tags-HTMLCustomPage';
-readme_from catfile('lib', 'Error', 'Pure', 'Tags', 'HTMLCustomPage.pm');
+readme_from 'HTMLCustomPage.pm';
 requires 'Exporter' => 0;
 requires 'Error::Pure::Die' => 0.05;
+requires 'Error::Pure::Output::Tags::HTMLCustomPage' => 0.01;
 requires 'Error::Pure::Utils' => 0.05;
 requires 'HTTP::Headers::Fast' => 0;
 requires 'Indent::PerlStruct' => 0.01;
