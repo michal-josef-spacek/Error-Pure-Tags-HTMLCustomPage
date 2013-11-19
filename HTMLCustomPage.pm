@@ -63,7 +63,7 @@ sub err {
 	# Finalize in main on last err.
 	my $stack_ar = $errors[-1]->{'stack'};
 	if ($stack_ar->[-1]->{'class'} eq 'main'
-		&& none { $_ eq $EVAL || $_ =~ /^eval '/ms}
+		&& none { $_ eq $EVAL || $_ =~ /^eval '/ms }
 		map { $_->{'sub'} } @{$stack_ar}) {
 
 		err_pretty($TAGS, $ENCODING, $CONTENT_TYPE, $XML_VERSION,
