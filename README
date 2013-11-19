@@ -1,22 +1,126 @@
 NAME
-    Error::Pure::Tags::HTMLCustomPage - TODO
+    Error::Pure::Tags::HTMLCustomPage - Error::Pure module with output as
+    Tags custom page.
 
 SYNOPSIS
-    TODO
+     use Error::Pure::Tags::HTMLCustomPage qw(err);
+     err 'This is a fatal error.', 'name', 'value';
 
 SUBROUTINES
-    err()   TODO
+    "err(@messages)"
+             Process error with messages @messages.
 
-EXAMPLE
-    TODO
+VARIABLES
+    $CONTENT_TYPE
+             Content type.
+             Default value is 'application/xhtml+xml'.
+
+    $ENCODING
+             Encoding.
+             Default value is 'UTF-8'.
+
+    $TAGS
+             Tags object.
+             It is required.
+             Default value is ''.
+
+    $TAGS_STRUCTURE_AR
+             Tags structure.
+             Default value is: [
+                     ['b', 'html'],
+                     ['b', 'head'],
+                     ['b', 'title'],
+                     ['d', 'Error'],
+                     ['e', 'title'],
+                     ['e', 'head'],
+                     ['b', 'body'],
+                     ['b', 'div'],
+                     ['d', 'Error on page'],
+                     ['e', 'div'],
+                     ['e', 'body'],
+                     ['e', 'html'],
+             ];
+
+    $XML_VERSION
+             XML version.
+             Default value is '1.1'.
+
+EXAMPLE1
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Error::Pure::Tags::HTMLCustomPage qw(err);
+
+     # Error.
+     err "1";
+
+     # Output like:
+     # Bad 'Tags' object at %s/HTMLCustomPage.pm line 56.
+
+EXAMPLE2
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Error::Pure::Tags::HTMLCustomPage qw(err);
+     use Tags::Output::Raw;
+
+     # Tags object.
+     $Error::Pure::Tags::HTMLCustomPage::TAGS = Tags::Output::Raw->new;
+
+     # Error.
+     err "1";
+
+     # Output like:
+     # Cache-Control: no-cache
+     # Date: Tue, 19 Nov 2013 13:05:29 GMT
+     # Content-Type: application/xhtml+xml
+     # 
+     # <?xml version="1.1" encoding="UTF-8" standalone="no"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html><head><title>Error</title></head><body><div>Error on page</div></body></html>
+
+EXAMPLE3
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Error::Pure::Tags::HTMLCustomPage qw(err);
+     use Tags::Output::Indent;
+
+     # Tags object.
+     $Error::Pure::Tags::HTMLCustomPage::TAGS = Tags::Output::Indent->new;
+
+     # Error.
+     err "1";
+
+     # Output like:
+     # Cache-Control: no-cache
+     # Date: Tue, 19 Nov 2013 13:10:44 GMT
+     # Content-Type: application/xhtml+xml
+     # 
+     # <?xml version="1.1" encoding="UTF-8" standalone="no"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html>
+     #   <head>
+     #     <title>
+     #       Error
+     #     </title>
+     #   </head>
+     #   <body>
+     #     <div>
+     #       Error on page
+     #     </div>
+     #   </body>
+     # </html>
 
 DEPENDENCIES
-    Error::Pure::Die(3pm), Error::Pure::Utils(3pm),
-    Error::Pure::Output::Tags::HTMLCustomPage(3pm), Exporter(3pm),
-    List::MoreUtils(3pm), Readonly(3pm).
+    Error::Pure::Die, Error::Pure::Utils,
+    Error::Pure::Output::Tags::HTMLCustomPage, Exporter, List::MoreUtils,
+    Readonly.
 
 SEE ALSO
-    Error::Pure(3pm).
+    Error::Pure.
 
 AUTHOR
     Michal Špaček skim@cpan.org
