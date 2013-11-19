@@ -1,6 +1,7 @@
 TODO
 ====
 1. Nebylo by vhodne odtud odstranit HTML z nazvu? To prece muze byt cokoliv.
+S tim nesouhlasi kod v Output/, takze promyslet a udelat obecny modul pro Tags.
 2.
 
 Applied
