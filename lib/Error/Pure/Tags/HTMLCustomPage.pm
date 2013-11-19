@@ -88,25 +88,107 @@ __END__
 
 =head1 NAME
 
-Error::Pure::Tags::HTMLCustomPage - TODO
+Error::Pure::Tags::HTMLCustomPage - Error::Pure module with output as Tags custom page.
 
 =head1 SYNOPSIS
 
-TODO
-
+ use Error::Pure::Tags::HTMLCustomPage qw(err);
+ err 'This is a fatal error.', 'name', 'value';
+ 
 =head1 SUBROUTINES
 
 =over 8
 
-=item B<err()>
+=item C<err(@messages)>
 
-TODO
+ Process error with messages @messages.
 
 =back
 
-=head1 EXAMPLE
+=head1 VARIABLES
 
-TODO
+=over 8
+
+=item C<$CONTENT_TYPE>
+
+ Content type.
+ Default value is 'application/xhtml+xml'.
+
+=item C<$ENCODING>
+
+ Encoding.
+ Default value is 'UTF-8'.
+
+=item C<$TAGS>
+
+ Tags object.
+ It is required.
+ Default value is ''.
+
+=item C<$TAGS_STRUCTURE_AR>
+
+ Tags structure.
+ Default value is: [
+         ['b', 'html'],
+         ['b', 'head'],
+         ['b', 'title'],
+         ['d', 'Error'],
+         ['e', 'title'],
+         ['e', 'head'],
+         ['b', 'body'],
+         ['b', 'div'],
+         ['d', 'Error on page'],
+         ['e', 'div'],
+         ['e', 'body'],
+         ['e', 'html'],
+ ];
+
+=item C<$XML_VERSION>
+
+ XML version.
+ Default value is '1.1'.
+
+=back
+
+=head1 EXAMPLE1
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Error::Pure::Tags::HTMLCustomPage qw(err);
+
+ # Error.
+ err "1";
+
+ # Output like:
+ # Bad 'Tags' object at %s/HTMLCustomPage.pm line 56.
+
+=head1 EXAMPLE2
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Error::Pure::Tags::HTMLCustomPage qw(err);
+ use Tags::Output::Raw;
+
+ # Tags object.
+ $Error::Pure::Tags::HTMLCustomPage::TAGS = Tags::Output::Raw->new;
+
+ # Error.
+ err "1";
+
+ # Output like:
+ # Cache-Control: no-cache
+ # Date: Tue, 19 Nov 2013 13:05:29 GMT
+ # Content-Type: application/xhtml+xml
+ # 
+ # <?xml version="1.1" encoding="UTF-8" standalone="no"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ # "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html><head><title>Error</title></head><body><div>Error
+ # on page</div></body></html>
 
 =head1 DEPENDENCIES
 
