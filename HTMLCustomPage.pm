@@ -7,8 +7,8 @@ use warnings;
 
 # Modules.
 use Error::Pure::Die;
-use Error::Pure::Utils qw(err_helper);
 use Error::Pure::Output::Tags::HTMLCustomPage qw(err_pretty);
+use Error::Pure::Utils qw(err_helper);
 use List::MoreUtils qw(none);
 use Readonly;
 
