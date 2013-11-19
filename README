@@ -1,0 +1,29 @@
+NAME
+    Error::Pure::Tags::HTMLCustomPage - TODO
+
+SYNOPSIS
+    TODO
+
+SUBROUTINES
+    err()   TODO
+
+EXAMPLE
+    TODO
+
+DEPENDENCIES
+    Error::Pure::Die(3pm), Error::Pure::Utils(3pm),
+    Error::Pure::Output::Tags::HTMLCustomPage(3pm), Exporter(3pm),
+    List::MoreUtils(3pm), Readonly(3pm).
+
+SEE ALSO
+    Error::Pure(3pm).
+
+AUTHOR
+    Michal Špaček skim@cpan.org
+
+LICENSE AND COPYRIGHT
+     BSD license.
+
+VERSION
+    0.01
+
