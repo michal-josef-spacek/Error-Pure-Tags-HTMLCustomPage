@@ -30,8 +30,6 @@ requires:
   Error::Pure::Output::Tags::HTMLCustomPage: 0.01
   Error::Pure::Utils: 0.05
   Exporter: 0
-  HTTP::Headers::Fast: 0
-  Indent::PerlStruct: 0.01
   List::MoreUtils: 0
   Readonly: 0
 resources:
