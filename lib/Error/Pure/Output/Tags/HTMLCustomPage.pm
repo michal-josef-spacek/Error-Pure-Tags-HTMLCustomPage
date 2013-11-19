@@ -98,12 +98,12 @@ TODO
 
 =head1 DEPENDENCIES
 
-L<HTTP::Headers::Fast(3pm)>,
-L<Readonly(3pm)>.
+L<HTTP::Headers::Fast>,
+L<Readonly>.
 
 =head1 SEE ALSO
 
-L<Error::Pure(3pm)>.
+L<Error::Pure>.
 
 =head1 AUTHOR
 

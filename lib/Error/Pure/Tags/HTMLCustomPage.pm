@@ -192,16 +192,16 @@ Error::Pure::Tags::HTMLCustomPage - Error::Pure module with output as Tags custo
 
 =head1 DEPENDENCIES
 
-L<Error::Pure::Die(3pm)>,
-L<Error::Pure::Utils(3pm)>,
-L<Error::Pure::Output::Tags::HTMLCustomPage(3pm)>,
-L<Exporter(3pm)>,
-L<List::MoreUtils(3pm)>,
-L<Readonly(3pm)>.
+L<Error::Pure::Die>,
+L<Error::Pure::Utils>,
+L<Error::Pure::Output::Tags::HTMLCustomPage>,
+L<Exporter>,
+L<List::MoreUtils>,
+L<Readonly>.
 
 =head1 SEE ALSO
 
-L<Error::Pure(3pm)>.
+L<Error::Pure>.
 
 =head1 AUTHOR
 
