@@ -94,7 +94,7 @@ Error::Pure::Tags::HTMLCustomPage - Error::Pure module with output as Tags custo
 
  use Error::Pure::Tags::HTMLCustomPage qw(err);
  err 'This is a fatal error.', 'name', 'value';
- 
+
 =head1 SUBROUTINES
 
 =over 8
