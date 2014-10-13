@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Perl module for structured errors. HTMLCustomPage version.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Error-Pure-Tags-HTMLCustomPage';
 readme_from 'HTMLCustomPage.pm';

@@ -1,7 +1,7 @@
 ---
 abstract: 'Perl module for structured errors. HTMLCustomPage version.'
 author:
-  - 'Michal Špaček <skim@cpan.org>'
+  - 'Michal Spacek <skim@cpan.org>'
 build_requires:
   English: 0
   ExtUtils::MakeMaker: 6.36
@@ -37,4 +37,4 @@ resources:
   homepage: https://github.com/tupinek/Error-Pure-Tags-HTMLCustomPage
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/tupinek/Error-Pure-Tags-HTMLCustomPage
-version: 0.02
+version: '0.02'
