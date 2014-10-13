@@ -17,6 +17,7 @@ requires 'Error::Pure::Output::Tags::HTMLCustomPage' => 0.01;
 requires 'Error::Pure::Utils' => 0.05;
 requires 'List::MoreUtils' => 0;
 requires 'Readonly' => 0;
+requires 'perl' => '5.8.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Error-Pure-Tags-HTMLCustomPage';
 resources 'homepage' => 'https://github.com/tupinek/'.
