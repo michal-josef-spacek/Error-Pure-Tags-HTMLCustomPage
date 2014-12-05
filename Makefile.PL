@@ -26,6 +26,7 @@ resources 'repository' => 'git://github.com/tupinek/'.
 	'Error-Pure-Tags-HTMLCustomPage';
 test_requires 'English' => 0;
 test_requires 'File::Object' => 0.07;
+test_requires 'Tags::Output::Raw' => 0.03;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 test_requires 'Test::Pod' => 0;

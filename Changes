@@ -1,5 +1,6 @@
 0.03
  - Add minimal version of Perl.
+ - Add simple tests.
  - Update Module::Install to 1.14 version.
 
 0.02 2014-10-13T11:15:48+02:00
