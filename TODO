@@ -2,7 +2,9 @@ TODO
 ====
 1. Nebylo by vhodne odtud odstranit HTML z nazvu? To prece muze byt cokoliv.
 S tim nesouhlasi kod v Output/, takze promyslet a udelat obecny modul pro Tags.
-2.
+2. Bylo by dobre bud vytvorit Tags::Output::* objekt, kdyz neni, nebo to poradne
+   kontrolovat.
+3.
 
 Applied
 =======
