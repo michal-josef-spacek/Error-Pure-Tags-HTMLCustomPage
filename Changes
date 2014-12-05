@@ -1,4 +1,4 @@
-0.03
+0.03 2014-12-05T10:13:28+01:00
  - Add minimal version of Perl.
  - Add simple tests.
  - Fix err() die output to standard Error::Pure style.
