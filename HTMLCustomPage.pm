@@ -72,7 +72,7 @@ sub err {
 
 	# Die for eval.
 	} else {
-		die "$msg[0]\n";
+		die "$errors[-1]->{'msg'}->[0]\n";
 	}
 
 	return;
