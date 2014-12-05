@@ -18,7 +18,7 @@ Readonly::Scalar my $EMPTY => q{};
 Readonly::Scalar my $EVAL => 'eval {...}';
 
 # Version.
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 # Content type.
 our $CONTENT_TYPE = 'application/xhtml+xml';
@@ -245,6 +245,6 @@ Michal Špaček L<skim@cpan.org>
 
 =head1 VERSION
 
-0.03
+0.04
 
 =cut
